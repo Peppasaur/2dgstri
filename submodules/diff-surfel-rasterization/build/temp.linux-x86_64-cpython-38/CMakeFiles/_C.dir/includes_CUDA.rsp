@@ -1,0 +1,1 @@
+-I"/home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/cuda_rasterizer" -I"/home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/third_party/glm" -I/environment/miniconda3/include

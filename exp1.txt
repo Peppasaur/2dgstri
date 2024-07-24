@@ -1,0 +1,37 @@
+ cuda-memcheck  --error-exitcode 1 --tool memcheck python train.py -s /home/featurize/data/DTU/scan63 -m output/date/scan63_1 -r 2 --depth_ratio 1
+python render.py -s /home/featurize/data/DTU/scan63 -m output/date/scan63_1 -r 2 --depth_ratio 1 --skip_test --skip_train  --render_path
+
+python train.py -s /home/featurize/data/2dgstest/DTU/scan63 -m output/date/scan63_2 -r 2 --depth_ratio 1
+python render.py -s /home/featurize/data/2dgstest/DTU/scan63 -m /home/featurize/data/2dgstest/2d-gaussian-splatting/output/date/scan63_2 -r 2 --depth_ratio 1 --skip_test --skip_train --render_path
+
+pip install /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization
+pip install /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/simple-knn
+
+
+
+
+cd /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization;  python setup.py install;  cd /home/featurize/data/2dgstri/2d-gaussian-splatting;
+python train.py -s /home/featurize/data/DTU/scan63 -m output/date/scan63_1 -r 2 --depth_ratio 1
+
+cd /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/build; make; cd /home/featurize/data/2dgstri/2d-gaussian-splatting
+
+conda activate /home/featurize/work/2dgsenv
+
+cd /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization;  python setup.py install;  cd /home/featurize/data/2dgstri/2d-gaussian-splatting;  python train.py -s /home/featurize/data/DTU/scan63 -m output/date/scan63_1 -r 2 --depth_ratio 1;
+python render.py -s /home/featurize/data/DTU/scan63 -m output/date/scan63_1 -r 2 --depth_ratio 1 --skip_test --skip_train --render_path
+
+collected_id6523
+collected_id14274
+
+tensorboard --bind_all --port 6006 --logdir output/date/scan63_1
+
+nanid9734
+7678
+10490
+
+16928
+14274
+
+sudo apt-get update
+sudo apt-get install ninja-build
+

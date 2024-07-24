@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/home/featurize/data/DTU/scan63', model_path='output/date/scan63_1', images='images', resolution=2, white_background=False, data_device='cuda', eval=False)

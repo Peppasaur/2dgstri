@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -shared  -o /home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/diff_surfel_rasterization/_C.cpython-38-x86_64-linux-gnu.so @CMakeFiles/_C.dir/objects1 @CMakeFiles/_C.dir/linkLibs.rsp -L"/environment/miniconda3/lib/stubs" -L"/environment/miniconda3/lib"

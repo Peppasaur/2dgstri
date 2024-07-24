@@ -1,0 +1,3 @@
+/home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/build/temp.linux-x86_64-cpython-38/CMakeFiles/_C.dir
+/home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/build/temp.linux-x86_64-cpython-38/CMakeFiles/edit_cache.dir
+/home/featurize/data/2dgstri/2d-gaussian-splatting/submodules/diff-surfel-rasterization/build/temp.linux-x86_64-cpython-38/CMakeFiles/rebuild_cache.dir
